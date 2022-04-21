@@ -14,7 +14,7 @@ public class Credito implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_credito")
     private Long idCredito ;
-    private Long limite ;
+    public Long limite ;
 
     public Credito() {
     }

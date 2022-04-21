@@ -1,10 +1,9 @@
-
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://wwww.thymeleaf.org" 
-      xmlns:sec="http://thymeleaft.org/extras/spring-security">    <head>
+      xmlns:sec="http://thymeleaft.org/extras/spring-security">
+    <head th:replace="layout/plantilla :: head">
         <title>TechShop</title>
-        <meta charset="UTF-8"/>
-        <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header th:replace="layout/plantilla :: header"/>
@@ -26,7 +25,7 @@
                 <input type="checkbox" name="activo" th:field="*{activo}"/>
                 <br/>
 
-                <input type="submit" name="guardar" th:text="#{accion.guardar}"/>
+                <input type="submit" name="guardar" />
             </form>
         </div>
         <footer th:replace="layout/plantilla :: footer"/>
